@@ -1,0 +1,24 @@
+﻿<Application x:Class="WPFapp_With_Logger.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPFapp_With_Logger"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="RoundButtonTemplate" TargetType="Button">
+            <Setter Property="Background" Value="Brown"/>
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="15" Background="{TemplateBinding Background}"
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>

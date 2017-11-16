@@ -1,0 +1,17 @@
+﻿<Window x:Class="WPFapp_With_Logger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFapp_With_Logger"
+        mc:Ignorable="d"
+        Title="WPF Logger" Height="235" Width="388.1" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown" WindowStyle="None">
+    <Grid Background="#FF333333">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="30" Margin="30,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" TabIndex="1" Background="#FFEDEDED" BorderBrush="LightGray"/>
+        <Button Style="{StaticResource RoundButtonTemplate}" BorderBrush="White" x:Name="button"  Content="Say Hello" HorizontalAlignment="Left" Margin="30,165,0,0" VerticalAlignment="Top" Width="115" Height="36" Click="button_Click" TabIndex="2" Background="#FF2175B8" Foreground="White" BorderThickness="2" />
+        <Button Style="{StaticResource RoundButtonTemplate}" x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="240,165,0,0" VerticalAlignment="Top" Width="115" Height="36" Click="button1_Click" TabIndex="3" Background="#FF2175B8" Foreground="White" BorderBrush="White" BorderThickness="2"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" Width="325" Foreground="White"/>
+        <Label x:Name="label1" Content="WPF App with Logger Integrated" HorizontalAlignment="Left" Margin="30,15,0,0" VerticalAlignment="Top" Width="325" Foreground="#FFD2DBE0" FontSize="20" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
