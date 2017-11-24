@@ -57,9 +57,9 @@ private static readonly ILog log = LogManager.GetLogger(typeof(App));
 ```
 ## Open MainWindow.cs
 - Add reference :
-  - ```cs
+  ```cs
     using log4net;
-    ```
+  ```
 - Add these codes inside “public partial class MainWindow”
   ```cs
   private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
